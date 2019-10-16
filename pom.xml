@@ -26,6 +26,7 @@
         <module>recursive</module>
         <module>redis</module>
         <module>rebbitmq</module>
+        <module>docker</module>
     </modules>
 
 
