@@ -1,7 +1,6 @@
 package com.chp.demo;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 
 public class Test {
@@ -10,6 +9,10 @@ public class Test {
 //    https://www.cnblogs.com/prayjourney/p/9667835.html
 
 //    https://www.cnblogs.com/xll1025/p/10665282.html  -- 异步回调的实现
+
+//    https://blog.csdn.net/cangchen/article/details/44063359 -- 注册原理
+
+//    https://www.cnblogs.com/againn/p/9512013.html -- 监听原理
 
     public static void main(String[] args) {
 
