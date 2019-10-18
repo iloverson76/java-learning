@@ -17,14 +17,15 @@ public class Teacher implements Callback {
 
     public void askQuestion(List<Student> studentList,Question question){
         studentList.forEach(student -> {
-            student.caculate(this,question);
+           new Thread(()->{
+               System.out.println(student.getName()+"开始回答问题...");
+               student.caculate(this,question);
+           }).start();
         });
     }
 
     @Override
     public void collectAnswer(Answer answer) {
-        new Thread(()->{
-            System.out.println(this.getName()+"老师收到"+answer.getStudentName()+"的答案是:"+answer.getResult());
-        }).start();
+        System.out.println(this.getName()+"老师收到"+answer.getStudentName()+"的答案是:"+answer.getResult());
     }
 }
